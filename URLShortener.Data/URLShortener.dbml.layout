@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="URLShortener">
+  <DataContextMoniker Name="/URLShortenerDataContext" />
+  <nestedChildShapes>
+    <classShape Id="9a23d8b8-c19d-4b41-bcb1-12ffe6e077ca" absoluteBounds="0.75, 0.875, 2, 1.7708968098958331">
+      <DataClassMoniker Name="/URLShortenerDataContext/User" />
+      <nestedChildShapes>
+        <elementListCompartment Id="6b95b67f-99e6-4d2c-bc0a-0f86fdce3bc1" absoluteBounds="0.765, 1.335, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="ec92b517-4e70-44eb-8de8-3c16e0221979" absoluteBounds="3.625, 1.25, 2, 1.7708968098958331">
+      <DataClassMoniker Name="/URLShortenerDataContext/URL" />
+      <nestedChildShapes>
+        <elementListCompartment Id="499c1a69-8f88-4de8-80d1-2973904dc19e" absoluteBounds="3.64, 1.71, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(2.75 : 1.94794840494792); (3.625 : 1.94794840494792)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/URLShortenerDataContext/User/User_URL" />
+      <nodes>
+        <classShapeMoniker Id="9a23d8b8-c19d-4b41-bcb1-12ffe6e077ca" />
+        <classShapeMoniker Id="ec92b517-4e70-44eb-8de8-3c16e0221979" />
+      </nodes>
+    </associationConnector>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>

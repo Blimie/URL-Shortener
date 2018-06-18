@@ -1,0 +1,18 @@
+﻿@using URLShortener.Data
+@model IEnumerable<URL>
+
+<div class="col-md-6 col-md-offset-3">
+    <table class="table table-bordered table-striped table-hover" style="margin-top: 60px">
+        <tr>
+            <th>Link</th>
+            <th>Views</th>
+        </tr>
+        @foreach (URL u in Model)
+        {
+            <tr>
+                <td> <a target="_blank" href="@ViewBag.CurrentURL/@u.ShortURL">@ViewBag.CurrentURL/@u.ShortURL</a> </td>
+                <td>@u.Views</td>
+            </tr>
+        }
+    </table>
+</div>
